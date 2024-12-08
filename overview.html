@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EDA and Feature Engineering of Google Play Store Dataset</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 20px;
+            line-height: 1.6;
+            background-color: #f8f9fa;
+            color: #343a40;
+        }
+        h1, h2, h3 {
+            color: #007bff;
+        }
+        .section {
+            margin-bottom: 30px;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        ul li {
+            margin-bottom: 10px;
+        }
+        .icon {
+            font-size: 20px;
+            margin-right: 10px;
+        }
+        .cta {
+            background-color: #007bff;
+            color: #ffffff;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 18px;
+            display: inline-block;
+            margin-top: 20px;
+        }
+        .cta:hover {
+            background-color: #0056b3;
+        }
+        pre {
+            background: #f1f1f1;
+            padding: 15px;
+            border-radius: 8px;
+            overflow-x: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>EDA and Feature Engineering of Google Play Store Dataset</h1>
+    <div class="section">
+        <h2>📄 Problem Statement</h2>
+        <p>
+            Today, 1.85 million different apps are available for users to download. Android users have even more from which to choose, with 2.56 million available through the Google Play Store. These apps have come to play a huge role in the way we live our lives today. Our objective is to find:
+        </p>
+        <ul>
+            <li><span class="icon">📱</span> The most popular category</li>
+            <li><span class="icon">📊</span> The app with the largest number of installs</li>
+            <li><span class="icon">📦</span> The app with the largest size</li>
+        </ul>
+    </div>
+    <div class="section">
+        <h2>📂 Data Collection</h2>
+        <p>The dataset contains:</p>
+        <ul>
+            <li>20 columns</li>
+            <li>10,841 rows</li>
+        </ul>
+    </div>
+    <div class="section">
+        <h2>🔍 Steps to Follow</h2>
+        <ul>
+            <li><span class="icon">1️⃣</span> Data Cleaning</li>
+            <li><span class="icon">2️⃣</span> Exploratory Data Analysis</li>
+            <li><span class="icon">3️⃣</span> Feature Engineering</li>
+        </ul>
+    </div>
+    <div class="section">
+        <h2>💻 Code Summary</h2>
+        <pre>
+import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
+import seaborn as sns
+
+df = pd.read_csv('https://raw.githubusercontent.com/krishnaik06/playstore-Dataset/main/googleplaystore.csv')
+df.info()
+# Further processing...
+        </pre>
+    </div>
+    <div class="section">
+        <h2>📈 Key Insights</h2>
+        <ul>
+            <li>🗂 Family category has the most apps, accounting for 18% of total apps.</li>
+            <li>🎮 Games category is the most popular, with 35 billion installs.</li>
+            <li>⭐ There are 271 apps with a perfect 5-star rating.</li>
+        </ul>
+    </div>
+    <a href="https://github.com/krishnaik06/playstore-Dataset" class="cta">View Dataset</a>
+</body>
+</html>
